@@ -1,6 +1,3 @@
-'use client';
-import대시보드 완성본 드릴게요. GitHub에서 `app/page.tsx` 열고 내용 전체 교체해주세요!
-
 ```tsx
 'use client';
 import { useState } from 'react';
