@@ -1,15 +1,18 @@
-import type { Metadata } from 'next';
-import './globals.css';
-import Navigation from './Navigation';
+import type { Metadata } from "next";
+import "./globals.css";
+import Navigation from "@/components/Navigation";
 
-export const metadata: Metadata = { title: 'RAON E&G ERP' };
+export const metadata: Metadata = {
+  title: "RAON E&G ERP v14",
+  description: "Commercial HVAC SaaS ERP",
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko">
-      <body className="bg-gray-50 min-h-screen">
+      <body>
         <Navigation />
-        <main className="p-6">{children}</main>
+        <main className="min-h-screen bg-slate-50">{children}</main>
       </body>
     </html>
   );
